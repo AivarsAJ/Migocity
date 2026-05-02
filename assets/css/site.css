@@ -434,6 +434,14 @@ Header Style
   color: var(--migo-accent);
 }
 
+.logo-brand-leaf {
+  color: var(--migo-accent);
+  font-size: 0.8em;
+  margin-left: 0.18em;
+  opacity: 0.9;
+  transform: translateY(-0.05em);
+}
+
 .background-header .main-nav .logo h1 {
   line-height: var(--header-height-sticky);
 }
@@ -1322,7 +1330,7 @@ Video Style
 
 /* 
 ---------------------------------------------
-Rentals page (rentals.html)
+Rentals site home (index.html)
 --------------------------------------------- 
 */
 
@@ -1345,23 +1353,19 @@ Rentals page (rentals.html)
 
 .rentals-hero-track {
   display: flex;
-  width: 400%;
+  width: 300%;
   height: 100%;
   will-change: transform;
   animation: rentalsHeroSlide 22s ease-in-out infinite;
 }
 
 .rentals-hero-slide {
-  flex: 0 0 25%;
-  width: 25%;
+  flex: 0 0 33.333%;
+  width: 33.333%;
   height: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-.rentals-hero-slide--1 {
-  background-image: url(../images/rentals-hero-1.jpeg);
 }
 
 .rentals-hero-slide--2 {
@@ -1372,26 +1376,25 @@ Rentals page (rentals.html)
   background-image: url(../images/rentals-hero-3.jpg);
 }
 
-.rentals-hero-slide--1dup {
-  background-image: url(../images/rentals-hero-1.jpeg);
+.rentals-hero-slide--2dup {
+  background-image: url(../images/rentals-hero-2.jpg);
 }
 
 @keyframes rentalsHeroSlide {
   0%,
-  15% {
+  28% {
     transform: translateX(0);
   }
-  18%,
-  31% {
-    transform: translateX(-25%);
+  33%,
+  61% {
+    transform: translateX(-33.333%);
   }
-  34%,
-  47% {
-    transform: translateX(-50%);
+  66%,
+  94% {
+    transform: translateX(-66.666%);
   }
-  50%,
   100% {
-    transform: translateX(-75%);
+    transform: translateX(-66.666%);
   }
 }
 
@@ -1622,6 +1625,7 @@ body.rentals-site #kontakti.rentals-section {
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
   height: 100%;
   border: 1px solid #eee;
+  text-align: center;
 }
 
 .rentals-price-card-featured {
@@ -1768,6 +1772,13 @@ body.rentals-site #kontakti.rentals-section {
   color: var(--migo-accent);
 }
 
+.rentals-footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
 .rentals-footer .rentals-footer-social-link {
   display: inline-flex;
   align-items: center;
@@ -1780,6 +1791,10 @@ body.rentals-site #kontakti.rentals-section {
 
 .rentals-footer .rentals-footer-social-link:hover {
   color: var(--migo-accent);
+}
+
+.rentals-footer-brand-col {
+  text-align: center;
 }
 
 .rentals-footer-grid {
@@ -1825,6 +1840,16 @@ body.rentals-site #kontakti.rentals-section {
   flex: 1;
   min-width: 0;
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .rentals-cards-carousel-viewport {
+    touch-action: pan-y;
+  }
+}
+
+.rentals-cards-carousel-track.is-dragging {
+  transition: none;
 }
 
 .rentals-cards-carousel-track {
@@ -1873,6 +1898,12 @@ body.rentals-site #kontakti.rentals-section {
 .rentals-cards-nav:disabled {
   opacity: 0.35;
   cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  .rentals-cards-carousel .rentals-cards-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1938,8 +1969,9 @@ body.rentals-site #kontakti.rentals-section {
 }
 
 .rentals-card ul {
+  list-style: none;
   margin: 0 0 22px 0;
-  padding-left: 1.15rem;
+  padding-left: 0;
   color: #555;
   font-size: 15px;
   line-height: 1.65;
@@ -1947,7 +1979,21 @@ body.rentals-site #kontakti.rentals-section {
 }
 
 .rentals-card ul li {
-  margin-bottom: 6px;
+  position: relative;
+  padding-left: 1.45rem;
+  margin-bottom: 8px;
+}
+
+.rentals-card ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.22em;
+  font-size: 0.82em;
+  line-height: 1;
+  color: #1a7f37;
 }
 
 @media (max-width: 767px) {
@@ -1964,9 +2010,8 @@ body.rentals-site #kontakti.rentals-section {
     flex: 0 0 100%;
     width: 100%;
   }
-  .rentals-hero-slide--2,
   .rentals-hero-slide--3,
-  .rentals-hero-slide--1dup {
+  .rentals-hero-slide--2dup {
     display: none;
   }
   .rentals-hero-title {

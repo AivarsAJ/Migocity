@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Bērnu mašīnu, laivu, elektroskrejriteņu, mini kvadriciklu un telšu noma Jelgavā — ar galdiem, krēsliem, skaņu un LED. Rezervācija un atpūta ar ģimeni.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Migo City Noma — ūdens un zemes atpūta Jelgavā</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+</head>
+
+<body class="rentals-site">
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <h1><span class="logo-brand-migo">Migo</span> <span class="logo-brand-city">City</span><i class="fa-solid fa-leaf logo-brand-leaf" aria-hidden="true"></i></h1>
+            </a>
+            <ul class="nav scroll-to-section">
+              <li><a href="#sakums">Sākums</a></li>
+              <li><a href="#piedavajums">Piedāvājums</a></li>
+              <li><a href="#cenas">Cenas</a></li>
+              <li><a href="#kontakti">Kontakti</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#reservationModal"><i class="fa fa-calendar"></i> Rezervēt</a></li>
+            </ul>
+            <a class="menu-trigger"><span>Menu</span></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="sakums" class="rentals-hero header-text">
+    <div class="rentals-hero-bg" aria-hidden="true">
+      <div class="rentals-hero-track">
+        <div class="rentals-hero-slide rentals-hero-slide--2"></div>
+        <div class="rentals-hero-slide rentals-hero-slide--3"></div>
+        <div class="rentals-hero-slide rentals-hero-slide--2dup" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9">
+          <span class="rentals-hero-badge">Jelgava · visa sezona</span>
+          <h1 class="rentals-hero-title">Ūdens un zemes atpūtas noma ģimenei un draugiem</h1>
+          <p class="rentals-hero-lead">Telts ar aprīkojumu, BBQ elektrolaiva, elektroskrejriteņi, mini kvadricikls un bērnu mašīnas — izvēlies piedāvājumu, rezervē datumus un izbaudi brīvdienas bez liekām raizēm.</p>
+          <div class="rentals-hero-actions">
+            <button type="button" class="btn rentals-btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">Rezervēt tagad</button>
+            <a href="#cenas" class="btn rentals-btn-outline">Skatīt cenas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="rentals-strip">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="rentals-strip-item">
+            <i class="fa-solid fa-shield rentals-strip-icon" aria-hidden="true"></i>
+            <h3>Drošība</h3>
+            <p>Vestes, ķiveres un īsa instrukcija pirms katra izbraukuma.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rentals-strip-item">
+            <i class="fa-solid fa-clock rentals-strip-icon" aria-hidden="true"></i>
+            <h3>Elastīgi laiki</h3>
+            <p>Noma pēc stundām vai dienas — vienojamies par grafiku.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rentals-strip-item">
+            <i class="fa-solid fa-circle-check rentals-strip-icon" aria-hidden="true"></i>
+            <h3>Skaidras cenas</h3>
+            <p>Nav slēptu maksājumu — redzami noteikumi un apmaksa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section id="piedavajums" class="section rentals-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-center mb-5">
+          <div class="section-heading">
+            <h6>Piedāvājums</h6>
+            <h2>Pieci veidi, kā pārvietoties un atpūsties</h2>
+          </div>
+          <p class="rentals-muted">Transportlīdzekļi un pasākumu inventārs tiek nodoti tehniskā kārtībā. Iesakām iepriekš rezervēt īpaši brīvdienās un svētku dienās.</p>
+        </div>
+      </div>
+      <div class="rentals-cards-carousel" id="rentalsOfferingsCarousel">
+        <button type="button" class="rentals-cards-nav rentals-cards-nav-prev" aria-controls="rentalsOfferingsTrack" aria-label="Iepriekšējie piedāvājumi" disabled>
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+        <div class="rentals-cards-carousel-viewport">
+          <div class="rentals-cards-carousel-track" id="rentalsOfferingsTrack">
+            <div class="rentals-cards-carousel-cell">
+              <article class="rentals-card">
+                <img class="rentals-card-img" src="assets/images/tent-rental.jpg" alt="Telts un pasākumu aprīkojums">
+                <div class="rentals-card-body">
+                  <div class="rentals-icon" aria-hidden="true"><i class="fa-solid fa-campground"></i></div>
+                  <h3>Telšu noma</h3>
+                  <p class="rentals-card-text">Telts 4×4 m, 3×6 m vai 4×8 m — ar galdiem, krēsliem, gāzes sildītāju, JBL Ultimate skaņu, LED virtenēm un gatavu noskaņu svētkiem.</p>
+                  <ul>
+                    <li>Izmēri: 4×4, 3×6 un 4×8 m</li>
+                    <li>Galdi, krēsli, gāzes sildītājs</li>
+                    <li>JBL Ultimate un LED virtenes</li>
+                  </ul>
+                  <button type="button" class="btn reservation-popup-btn w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Rezervēt</button>
+                </div>
+              </article>
+            </div>
+            <div class="rentals-cards-carousel-cell">
+              <article class="rentals-card">
+                <img class="rentals-card-img" src="assets/images/bbq-rental.jpg" alt="BBQ elektrolaiva">
+                <div class="rentals-card-body">
+                  <div class="rentals-icon" aria-hidden="true"><i class="fa-solid fa-ship"></i></div>
+                  <h3>BBQ elektrolaiva</h3>
+                  <p class="rentals-card-text">Klusa elektriskā laiva ar iespēju uzgrilēt kopā ar draugiem. Lieliski svētkiem un ģimenes braucieniem.</p>
+                  <ul>
+                    <li>Elektrodzinējs — bez izmešiem ūdenī</li>
+                    <li>Gāzes grils pēc pieprasījuma</li>
+                    <li>Ieskats cenās — sadaļā «Cenas» zemāk</li>
+                  </ul>
+                  <button type="button" class="btn reservation-popup-btn w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Rezervēt</button>
+                </div>
+              </article>
+            </div>
+            <div class="rentals-cards-carousel-cell">
+              <article class="rentals-card">
+                <img class="rentals-card-img rentals-card-img--focus-lower" src="assets/images/mini-quad-rental.png" alt="Mini kvadricikls">
+                <div class="rentals-card-body">
+                  <div class="rentals-icon" aria-hidden="true"><i class="fa-solid fa-motorcycle"></i></div>
+                  <h3>Mini kvadricikls</h3>
+                  <p class="rentals-card-text">Īsi izbraukumi pa drošu maršrutu ārpus pilsētas burzmas. Piemērots jauniešiem un ģimenēm ar vadītāja apliecību.</p>
+                  <ul>
+                    <li>Ķivere un aizsargapģērbs</li>
+                    <li>Braukšana tikai atļautās zonās</li>
+                    <li>Vecuma un tiesību prasības pirms nomas</li>
+                  </ul>
+                  <button type="button" class="btn reservation-popup-btn w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Rezervēt</button>
+                </div>
+              </article>
+            </div>
+            <div class="rentals-cards-carousel-cell">
+              <article class="rentals-card">
+                <img class="rentals-card-img" src="assets/images/electric-scooter-rental.jpg" alt="Elektroskrejriteņi">
+                <div class="rentals-card-body">
+                  <div class="rentals-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+                  <h3>Elektroskrejriteņu noma</h3>
+                  <p class="rentals-card-text">Klusi un ērti braucieni pa pilsētu vai promenādi — bez izmešiem, ar vienkāršu vadību. Piemēroti īsiem izbraucieniem un atklāšanai ar draugiem.</p>
+                  <ul>
+                    <li>Ķivere un drošības aprīkojums pēc noteikumiem</li>
+                    <li>Instruktāža pie pirmās nomas</li>
+                    <li>Maršruts un ātruma ierobežojumi — saskaņojam pirms izbraukšanas</li>
+                  </ul>
+                  <button type="button" class="btn reservation-popup-btn w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Rezervēt</button>
+                </div>
+              </article>
+            </div>
+            <div class="rentals-cards-carousel-cell">
+              <article class="rentals-card">
+                <img class="rentals-card-img" src="assets/images/rentals-hero-3.jpg" alt="Bērnu mašīnas">
+                <div class="rentals-card-body">
+                  <div class="rentals-icon" aria-hidden="true"><i class="fa-solid fa-car"></i></div>
+                  <h3>Bērnu mašīnas</h3>
+                  <p class="rentals-card-text">Elektriskās rotaļu mašīnas īsiem izbraukumiem — piemērotas bērniem pieaugušo uzraudzībā. Lieliski ģimenes pasākumiem un svētkiem.</p>
+                  <ul>
+                    <li>Vecuma un svara ierobežojumi pēc modeļa</li>
+                    <li>Braukšana tikai drošās zonās un pēc noteikumiem</li>
+                    <li>Nomas ilgums pēc vienošanās</li>
+                  </ul>
+                  <button type="button" class="btn reservation-popup-btn w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Rezervēt</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="rentals-cards-nav rentals-cards-nav-next" aria-controls="rentalsOfferingsTrack" aria-label="Nākamie piedāvājumi">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="cenas" class="section rentals-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <div class="section-heading">
+            <h2>Cenas sākot no</h2>
+          </div>
+          <p class="rentals-muted">Galīgā summa atkarīga no sezonas, ilguma un papildu aprīkojuma. Raksti — sagatavosim piedāvājumu.</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-5 g-4 rentals-price-row">
+        <div class="col">
+          <div class="rentals-price-card">
+            <h3>Telšu komplekts</h3>
+            <p class="rentals-price-amount">90 €</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="rentals-price-card rentals-price-card-featured">
+            <h3>BBQ elektrolaiva</h3>
+            <p class="rentals-price-amount">25 €</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="rentals-price-card">
+            <h3>Elektroskrejriteņi</h3>
+            <p class="rentals-price-amount">5 €</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="rentals-price-card">
+            <h3>Mini kvads</h3>
+            <p class="rentals-price-amount">7 €</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="rentals-price-card">
+            <h3>Bērnu mašīnas</h3>
+            <p class="rentals-price-amount">4 €</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <button type="button" class="btn rentals-btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#reservationModal">Pieprasīt precīzu piedāvājumu</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="kontakti" class="rentals-section rentals-section-alt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 mb-4 mb-lg-0 scroll-to-section">
+          <div class="section-heading">
+            <h6>Kontakti</h6>
+            <h2>Uzraksti vai zvani</h2>
+          </div>
+          <p class="rentals-muted mb-4">Darba laiks un ārpusdarba laika numurs — precizējiet savā piedāvājumā.</p>
+          <p class="mb-3"><strong>Adrese:</strong> Pasta sala 3A, Jelgava, Latvija, LV-3001</p>
+          <p class="mb-2"><strong>Tālrunis:</strong> <a href="tel:+37126623961">26 623 961</a></p>
+          <p class="mb-4"><strong>E-pasts:</strong> <a href="mailto:migocity.jelgava@gmail.com">migocity.jelgava@gmail.com</a></p>
+          <a href="#kontakti" class="btn rentals-btn-outline mt-3">Rakstīt ziņu (forma zemāk)</a>
+        </div>
+        <div class="col-lg-7">
+          <form class="rentals-contact-form" id="rentalsQuickForm" action="#" method="post">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="name" placeholder="Vārds" required autocomplete="name">
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" name="phone" placeholder="Tālrunis" autocomplete="tel">
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control" name="email" placeholder="E-pasts" required autocomplete="email">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" name="message" rows="4" placeholder="Ziņa (transporta veids, datums, jautājumi)" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn rentals-btn-primary">Nosūtīt ziņu</button>
+              </div>
+            </div>
+          </form>
+          <p class="rentals-form-done mt-3" id="rentalsFormDone" hidden>Paldies! Ziņa nosūtīta — sazināsimies tuvākajā laikā.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="rentals-footer">
+    <div class="container">
+      <div class="row rentals-footer-grid">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 rentals-footer-brand-col">
+          <h4><span class="logo-brand-migo">Migo</span> <span class="logo-brand-city">City</span> Noma</h4>
+          <p class="rentals-footer-text">Ūdens un zemes atpūtas inventāra noma Jelgavā. Droša atpūta ar skaidriem noteikumiem.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h4>Saites</h4>
+          <ul class="rentals-footer-links scroll-to-section">
+            <li><a href="#sakums">Sākums</a></li>
+            <li><a href="#piedavajums">Piedāvājums</a></li>
+            <li><a href="#cenas">Cenas</a></li>
+            <li><a href="#kontakti">Kontakti</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4>Seko mums</h4>
+          <div class="rentals-footer-social">
+            <a href="https://www.facebook.com/Migo.City.Jelgava/" class="rentals-footer-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+            <a href="https://www.instagram.com/migocityjelgava/" class="rentals-footer-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i><span> Instagram</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="rentals-footer-bottom">
+        <p>© <span class="logo-brand-migo">Migo</span> <span class="logo-brand-city">City</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reservation modal -->
+  <div class="modal fade reservation-modal" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reservationModalLabel">Rezervācija</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Aizvērt"></button>
+        </div>
+        <div class="modal-body reservation-modal-body">
+          <div id="reservationWidget" class="reservation-widget">
+            <div class="reservation-step" id="reservationCalendarStep">
+              <p class="reservation-hint">Izvēlieties nomas sākuma un beigu datumu.</p>
+              <div class="reservation-cal-toolbar">
+                <button type="button" class="reservation-cal-nav" id="resCalPrev" aria-label="Iepriekšējais mēnesis">&lsaquo;</button>
+                <span class="reservation-cal-title" id="resCalTitle"></span>
+                <button type="button" class="reservation-cal-nav" id="resCalNext" aria-label="Nākamais mēnesis">&rsaquo;</button>
+              </div>
+              <div class="reservation-cal-weekdays" aria-hidden="true">
+                <span>Pr</span><span>Ot</span><span>Tr</span><span>Ce</span><span>Pk</span><span>Se</span><span>Sv</span>
+              </div>
+              <div class="reservation-cal-grid" id="resCalGrid"></div>
+            </div>
+            <div class="reservation-step" id="reservationContactStep" hidden>
+              <p class="reservation-summary"><strong>Izvēlētais periods:</strong> <span id="resSummaryDates"></span></p>
+              <form id="reservationContactForm" class="reservation-form" novalidate>
+                <input type="hidden" name="date_from" id="resDateFrom" value="">
+                <input type="hidden" name="date_to" id="resDateTo" value="">
+                <div class="mb-2">
+                  <input type="text" class="form-control reservation-input" name="name" id="resName" placeholder="Vārds" required autocomplete="name">
+                </div>
+                <div class="mb-2">
+                  <input type="tel" class="form-control reservation-input" name="phone" id="resPhone" placeholder="Tālrunis" required autocomplete="tel">
+                </div>
+                <div class="mb-2">
+                  <input type="email" class="form-control reservation-input" name="email" id="resEmail" placeholder="E-pasts" required autocomplete="email">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control reservation-input" name="message" id="resMessage" rows="3" placeholder="Ziņa (neobligāti)"></textarea>
+                </div>
+                <button type="submit" class="btn reservation-submit">Nosūtīt rezervācijas pieprasījumu</button>
+              </form>
+              <button type="button" class="btn reservation-back" id="resCalBack">Atpakaļ pie kalendāra</button>
+              <p class="reservation-done" id="reservationDone" hidden>Paldies! Jūsu pieprasījums ir saglabāts — mēs ar jums sazināsimies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    (function () {
+      var f = document.getElementById('rentalsQuickForm');
+      var done = document.getElementById('rentalsFormDone');
+      if (f && done) {
+        f.addEventListener('submit', function (e) {
+          e.preventDefault();
+          if (!f.checkValidity()) {
+            f.reportValidity();
+            return;
+          }
+          f.reset();
+          done.hidden = false;
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>
