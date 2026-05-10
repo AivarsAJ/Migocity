@@ -1560,9 +1560,17 @@ body.rentals-site #cenas .section-heading h2 {
   background: #fafafa;
 }
 
-/* Contact: less empty band above footer (rentals-section default 90px bottom) */
+/* Contact: match other blocks; avoid global .section-heading 70px gap + excess footer band */
+body.rentals-site #kontakti .section-heading {
+  margin-bottom: 28px;
+}
+
+body.rentals-site #kontakti .section-heading h2 {
+  margin-top: 0;
+}
+
 body.rentals-site #kontakti.rentals-section {
-  padding-bottom: 36px;
+  padding-bottom: 0;
 }
 
 .rentals-muted {
@@ -1634,9 +1642,15 @@ body.rentals-site #kontakti.rentals-section {
 }
 
 .rentals-price-card h3 {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
   margin-bottom: 12px;
+}
+
+.rentals-price-card h3.rentals-price-title-shift-left {
+  transform: translateX(-6px);
 }
 
 .rentals-price-amount {
@@ -1941,6 +1955,10 @@ body.rentals-site #kontakti.rentals-section {
   object-position: center 88%;
 }
 
+.rentals-card-img.rentals-card-img--focus-scooter {
+  object-position: center bottom;
+}
+
 .rentals-card-body {
   padding: 26px 24px 30px;
   flex: 1 1 auto;
@@ -1965,6 +1983,7 @@ body.rentals-site #kontakti.rentals-section {
   font-size: 22px;
   font-weight: 700;
   color: #1e1e1e;
+  line-height: 1.3;
   margin-bottom: 12px;
 }
 

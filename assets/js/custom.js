@@ -231,14 +231,45 @@
 		});
 		document.getElementById('resCalBack').addEventListener('click', goCalendar);
 
+		var formSubmitUrl = 'https://formsubmit.co/ajax/migocity.jelgava@gmail.com';
+
 		form.addEventListener('submit', function (e) {
 			e.preventDefault();
 			if (!form.checkValidity()) {
 				form.reportValidity();
 				return;
 			}
-			form.setAttribute('hidden', 'hidden');
-			doneMsg.removeAttribute('hidden');
+			var submitBtn = form.querySelector('button[type="submit"]');
+			var origLabel = submitBtn ? submitBtn.textContent : '';
+			if (submitBtn) {
+				submitBtn.disabled = true;
+				submitBtn.textContent = 'Sūta…';
+			}
+			fetch(formSubmitUrl, {
+				method: 'POST',
+				body: new FormData(form),
+				headers: { Accept: 'application/json' }
+			})
+				.then(function (res) {
+					if (!res.ok) throw new Error('submit');
+					return res.json().catch(function () {
+						return {};
+					});
+				})
+				.then(function () {
+					form.setAttribute('hidden', 'hidden');
+					doneMsg.removeAttribute('hidden');
+					form.reset();
+				})
+				.catch(function () {
+					window.alert('Neizdevās nosūtīt. Lūdzu, mēģiniet vēlreiz vai rakstiet uz migocity.jelgava@gmail.com.');
+				})
+				.finally(function () {
+					if (submitBtn) {
+						submitBtn.disabled = false;
+						submitBtn.textContent = origLabel;
+					}
+				});
 		});
 
 		var reservationModal = document.getElementById('reservationModal');
